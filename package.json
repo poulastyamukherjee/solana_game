@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@solana/web3.js": "^1.31.0",
+    "chalk": "^4.1.2",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0"
+  },
+  "type": "module",
+  "name": "solana_roulette",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poulastyamukherjee/solana_game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poulastyamukherjee/solana_game/issues"
+  },
+  "homepage": "https://github.com/poulastyamukherjee/solana_game#readme",
+  "description": ""
+}
