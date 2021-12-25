@@ -1,5 +1,6 @@
 const web3 = require("@solana/web3.js");
 
+// method for getting Solana balance from wallet
 const getWalletBalance=async (pubk)=>{
     try{
         const connection=new web3.Connection(web3.clusterApiUrl("devnet"),"confirmed");
@@ -10,9 +11,9 @@ const getWalletBalance=async (pubk)=>{
     }
 }
 
+// method for airdropping Solana into a wallet
 const airDropSol = async (wallet, transactionamt) => {
     try {
-        //const walletKeyPair = await Keypair.fromSecretKey(userSecretKey);
         const connection=new web3.Connection(web3.clusterApiUrl("devnet"),"confirmed");
         console.log(`-- Airdropping 10 SOL --`)
         console.log(`=> For wallet address ${wallet.publicKey}`);
@@ -26,6 +27,7 @@ const airDropSol = async (wallet, transactionamt) => {
     }
 };
 
+// method for transferring Solana from one wallet into another wallet
 const transferSOL=async (from,to,transferAmt)=>{
     try{
         const connection=new web3.Connection(web3.clusterApiUrl("devnet"),"confirmed");
